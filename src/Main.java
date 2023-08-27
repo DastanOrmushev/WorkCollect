@@ -49,21 +49,10 @@ public class Main {
         System.out.println("Нахождение минимума с после сортировки: "+numbers.get(0));
         System.out.println("Нахождение минимума с после сортировки:"+numbers.get(numbers.size() - 1));
 
-
         System.out.println(numbers);
 
 
-        HashMap<Integer, Integer> map = new HashMap<>();
 
-
-        //int max = numbers.get(0);
-//        for (Integer i: numbers) {
-//            if (i == maxFreq) {
-//                count++;
-//            }
-//            System.out.println("count: "+count);
-//            System.out.println("maxFREQ: "+maxFreq);
-//        }
 
 //        ArrayList <Integer> numbers2 = new ArrayList<>();
 //        for(int i = 1; i <= 10; i++){
