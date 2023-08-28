@@ -15,8 +15,8 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList <Integer> numbers = new ArrayList<>();
-        for(int i = 1; i <= 10; i++){
-            int num = (int)(( Math.random() * (5) + 1));
+        for(int i = 1; i <= 100; i++){
+            int num = (int)(( Math.random() * (100) + 1));
             numbers.add(num);
         }
 
@@ -51,18 +51,30 @@ public class Main {
 
         System.out.println(numbers);
 
+        // 1. 6. Найти в этом списке числа 5, 7 и сколько раз они повторяются
+        int countOfFive=0;
+        int countOfSeven=0;
+        for (Integer i: numbers) {
+            if(i == 5)
+              countOfFive = countOfFive+1;
+            if(i == 7)
+                countOfSeven = countOfSeven+1;
+        }
+        System.out.println("Число 5 повторяется "+countOfFive+" раз");
+        System.out.println("Число 7 повторяется "+countOfSeven+" раз");
 
 
 
-//        ArrayList <Integer> numbers2 = new ArrayList<>();
-//        for(int i = 1; i <= 10; i++){
-//            int num = (int)(( Math.random() * (100) + 1));
-//            numbers2.add(num);
-//        }
-//
-//        //System.out.println(numbers.containsAll(numbers2));
-//
-//        System.out.println("numbers2: "+numbers2);
+            //1.8
+        ArrayList <Integer> numbers2 = new ArrayList<>();
+        for(int i = 1; i <= 10; i++){
+            int num = (int)(( Math.random() * (100) + 1));
+            numbers2.add(num);
+        }
+
+        //System.out.println(numbers.containsAll(numbers2));
+
+        System.out.println("numbers2: "+numbers2);
 
        /* 1. 8. Создать 2 списка из 10 элементов от 1 до 100. Проверить с какой попытки у вас получится
         создать списки с уникальными значениями.
