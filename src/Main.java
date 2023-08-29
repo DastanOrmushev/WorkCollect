@@ -14,7 +14,7 @@ public class Main {
          */
     public static void main(String[] args) {
 
-        ArrayList <Integer> numbers = new ArrayList<>();
+        List <Integer> numbers = new ArrayList<>();
         for(int i = 1; i <= 100; i++){
             int num = (int)(( Math.random() * (100) + 1));
             numbers.add(num);
@@ -26,6 +26,22 @@ public class Main {
 
         System.out.println("Нахождение Max c помощью (Collections.max(numbers))): "+Collections.max(numbers));//
         System.out.println("Нахождение Min c помощью (Collections.min(numbers))): "+Collections.min(numbers));
+
+        int maxCount=0;
+        int maxElement=0;
+
+        for (Integer ints: numbers) {
+           int frR = Collections.frequency(numbers,ints);
+            System.out.println("frR: = "+frR);
+           if (frR> maxCount){
+               maxCount =frR;
+               maxElement=ints;
+           }
+        }
+        System.out.println(maxCount);
+        System.out.println(maxElement);
+
+
 
 
         System.out.println("\n Второй способ");
@@ -82,6 +98,11 @@ public class Main {
                 number2: [19, 39, 7, 27, 78, 24, 95, 54, 38, 63]
        c третьей попытки
         */
+
+        //1.4
+
+
+
 
 
 
