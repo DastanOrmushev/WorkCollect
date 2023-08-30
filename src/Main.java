@@ -1,7 +1,4 @@
-import jdk.internal.icu.text.UnicodeSet;
-
 import java.util.*;
-
 public class Main {
             /*   1. Создать список из 100 рандомных элементов от 1 до 100.
                  1.2. Найти максимальное число.
